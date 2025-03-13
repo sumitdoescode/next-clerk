@@ -16,7 +16,7 @@ export const createOrUpdateUser = async (id: any, first_name: any, username: any
                 $set: {
                     firstName: first_name,
                     username: username,
-                    email: email_addresses[0].email,
+                    email: email_addresses[0].email_address,
                     avatar: image_url,
                 },
             },
