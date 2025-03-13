@@ -6,7 +6,7 @@ import { connectDB } from "@/db/dbConn";
 // this action is going to create a new user in our database
 // it receives an user objects and saves the user in the database
 
-export const createOrUpdateUser = async (id, first_name, username, email_addresses, image_url) => {
+export const createOrUpdateUser = async (id: any, first_name: any, username: any, email_addresses: any, image_url: any) => {
     try {
         await connectDB();
         let user = await User.findOneAndUpdate(
